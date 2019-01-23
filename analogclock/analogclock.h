@@ -10,6 +10,9 @@ class analogclock : public QWidget
 public:
     analogclock(QWidget *parent = 0);
     ~analogclock();
+
+protected:
+    void paintEvent(QPaintEvent *event) override;
 };
 
 #endif // ANALOGCLOCK_H
